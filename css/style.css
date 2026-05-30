@@ -1,18 +1,18 @@
 /* =========================================================
-   YOURBRAND PERIOD UNDERWEAR — PREMIUM DESIGN SYSTEM
+   YOURBRAND PERIOD UNDERWEAR  -  PREMIUM DESIGN SYSTEM
    Luxury e-commerce aesthetic inspired by Thinx, Everlane
    and modern DTC brands. Mobile-first, accessible, fast.
    ========================================================= */
 
 /* ========== DESIGN TOKENS ========== */
 :root {
-  /* Primary Palette — Warm, sophisticated nude/camel */
+  /* Primary Palette  -  Warm, sophisticated nude/camel */
   --color-primary:       #bfa07a;
   --color-primary-light: #d4b896;
   --color-primary-dark:  #9a7d5a;
   --color-primary-soft:  #f7f0e8;
 
-  /* Neutrals — True luxury: deep ink, soft stone, warm ivory */
+  /* Neutrals  -  True luxury: deep ink, soft stone, warm ivory */
   --color-ink:           #0f0f0f;
   --color-ink-secondary: #2a2a2a;
   --color-stone:         #6b6b6b;
@@ -58,7 +58,7 @@
   --radius-xl:   28px;
   --radius-full: 9999px;
 
-  /* Shadows — layered for depth */
+  /* Shadows  -  layered for depth */
   --shadow-1: 0 1px 2px rgba(15,15,15,0.04);
   --shadow-2: 0 2px 8px rgba(15,15,15,0.06);
   --shadow-3: 0 4px 16px rgba(15,15,15,0.08);
@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
-/* ========== BUTTONS — Premium Pill Style ========== */
+/* ========== BUTTONS  -  Premium Pill Style ========== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-full);
 }
 
-/* ========== TOP BAR — Ultra-minimal ========== */
+/* ========== TOP BAR  -  Ultra-minimal ========== */
 .top-bar {
   background: var(--color-ink);
   color: var(--color-pure);
@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.6rem;
 }
 
-/* ========== HEADER — Floating, blurred background ========== */
+/* ========== HEADER  -  Floating, blurred background ========== */
 .site-header {
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(20px) saturate(180%);
@@ -531,7 +531,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* ========== HERO — Full-bleed, dramatic ========== */
+/* ========== HERO  -  Full-bleed, dramatic ========== */
 .hero {
   padding-top: calc(var(--header-height) + var(--space-16));
   padding-bottom: var(--space-24);
@@ -713,7 +713,7 @@ h1, h2, h3, h4, h5, h6 {
   50% { transform: translateY(-12px); }
 }
 
-/* ========== SOCIAL PROOF BAR — Dark, elegant ========== */
+/* ========== SOCIAL PROOF BAR  -  Dark, elegant ========== */
 .social-proof-bar {
   background: var(--color-ink);
   color: var(--color-pure);
@@ -815,7 +815,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .comparison__before li::before {
-  content: '✕';
+  content: 'X';
   position: absolute;
   left: 0;
   color: var(--color-error);
@@ -824,7 +824,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .comparison__after li::before {
-  content: '✓';
+  content: '[check]';
   position: absolute;
   left: 0;
   color: var(--color-success);
@@ -930,7 +930,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
-/* ========== FEATURED PRODUCTS — Premium cards ========== */
+/* ========== FEATURED PRODUCTS  -  Premium cards ========== */
 .featured-products {
   padding: var(--space-24) 0;
   background: var(--color-pure);
@@ -1273,7 +1273,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bundle-card__list li::before {
-  content: '✓';
+  content: '[check]';
   color: var(--color-sage);
   font-weight: 700;
   font-size: 0.875rem;
@@ -1296,7 +1296,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-full);
 }
 
-/* ========== WHY US — Features grid ========== */
+/* ========== WHY US  -  Features grid ========== */
 .why-us {
   padding: var(--space-24) 0;
   background: var(--color-pure);
@@ -1365,7 +1365,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-/* ========== TESTIMONIALS — Elegant cards ========== */
+/* ========== TESTIMONIALS  -  Elegant cards ========== */
 .testimonials {
   padding: var(--space-24) 0;
   background: var(--color-cream);
@@ -1608,7 +1608,7 @@ tbody td.highlight {
   line-height: 1.7;
 }
 
-/* ========== FAQ — Elegant accordion ========== */
+/* ========== FAQ  -  Elegant accordion ========== */
 .faq {
   padding: var(--space-24) 0;
   background: var(--color-pure);
@@ -1687,7 +1687,7 @@ tbody td.highlight {
   line-height: 1.6;
 }
 
-/* ========== FINAL CTA — Dark, dramatic ========== */
+/* ========== FINAL CTA  -  Dark, dramatic ========== */
 .final-cta {
   padding: var(--space-24) 0;
   background: var(--color-pure);
@@ -1905,7 +1905,7 @@ tbody td.highlight {
   text-decoration: underline;
 }
 
-/* ========== FOOTER — Minimal, elegant ========== */
+/* ========== FOOTER  -  Minimal, elegant ========== */
 .site-footer {
   background: var(--color-ink);
   color: var(--color-pure);
@@ -2957,7 +2957,7 @@ tbody td.highlight {
 }
 
 .sustainability-details li::before {
-  content: '✓';
+  content: '[check]';
   position: absolute;
   left: 0;
   color: var(--color-sage);
