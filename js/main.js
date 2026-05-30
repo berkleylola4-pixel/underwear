@@ -170,11 +170,11 @@
         setInterval(updateCountdown, 1000);
     }
 
-    // ===== INTERSECTION OBSERVER for lazy animations =====
+    // ===== INTERSECTION OBSERVER for scroll animations =====
     if ('IntersectionObserver' in window) {
         const observerOptions = {
             root: null,
-            rootMargin: '0px',
+            rootMargin: '0px 0px -60px 0px',
             threshold: 0.1
         };
 
@@ -187,8 +187,23 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.product-card, .step, .feature, .testimonial, .blog-card, .bundle-card').forEach(el => {
+        // Observe elements for scroll reveal
+        document.querySelectorAll('.product-card, .step, .feature, .testimonial, .blog-card, .bundle-card, .local-card, .story-block, .giving-partner, .neighborhood-group, .local-info-card').forEach(el => {
+            el.classList.add('reveal');
             fadeObserver.observe(el);
+        });
+        
+        // Stagger children in grids
+        document.querySelectorAll('.product-grid, .steps, .features, .testimonial-grid, .bundle-grid, .blog-grid, .local-grid').forEach(grid => {
+            const children = grid.children;
+            Array.from(children).forEach((child, index) => {
+                child.classList.add(`reveal-delay-${Math.min(index + 1, 4)}`);
+            });
+        });
+    } else {
+        // Fallback for browsers without IntersectionObserver
+        document.querySelectorAll('.product-card, .step, .feature, .testimonial, .blog-card, .bundle-card, .local-card, .story-block, .giving-partner, .neighborhood-group, .local-info-card').forEach(el => {
+            el.classList.add('is-visible');
         });
     }
 
