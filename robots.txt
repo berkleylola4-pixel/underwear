@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+Allow: /collections/
+Allow: /products/
+Allow: /blog/
+Allow: /about.html
+Allow: /faq.html
+Allow: /local/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account
+Disallow: /admin
+Disallow: /api/
+Disallow: /*?sort=
+Disallow: /*?page=
+
+# Sitemap
+Sitemap: https://www.yourbrand.com/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bingbot specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
